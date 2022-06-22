@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 3750032d534cb41cf8ba1757e01bbef8
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - Input: {fileID: 2100000, guid: 3169d3f1cb874421da4b81232cdadd1c, type: 2}
+  - TextureHD: {fileID: 8400000, guid: 4a844fc937c9544c7b7c8db177fcc64b, type: 2}
+  - Texture4K: {fileID: 8400000, guid: d87a0048b5c724d489ad3d33953502a4, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
