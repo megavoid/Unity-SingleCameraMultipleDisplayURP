@@ -1,18 +1,28 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CameraSetup : MonoBehaviour
 {
-    public Material input;
-    public RenderTexture textureHD;
-    public RenderTexture texture4K;
+    [SerializeField] private Material input;
+    [SerializeField] private Dropdown select;
+    [SerializeField] private RenderTexture[] texture;
+
+    private Camera _cam;
+
     void Awake()
     {
-        RenderTexture renderTexture = textureHD;
-        Camera cam = gameObject.GetComponent<Camera>();
+        _cam = gameObject.GetComponent<Camera>();
         
+        SetRenderResolution(1);
+        select.SetValueWithoutNotify(1);
+    }
+
+    public void SetRenderResolution(int index)
+    {
+        // Configure Material / Shader
+        input.SetTexture("_Input", texture[index]);
         
-        input.SetTexture("_Input", renderTexture);
-        cam.targetTexture = renderTexture;
-        
+        // Set Camera output
+        _cam.targetTexture = texture[index];
     }
 }

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Test
+  m_Name: DisplayRendererMat
   m_Shader: {fileID: -6465566751694194690, guid: 478437a7b2dc7451eac55a28c530cbc2,
     type: 3}
   m_ValidKeywords: []
@@ -59,7 +59,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Input:
-        m_Texture: {fileID: 8400000, guid: 4a844fc937c9544c7b7c8db177fcc64b, type: 2}
+        m_Texture: {fileID: 8400000, guid: d87a0048b5c724d489ad3d33953502a4, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
